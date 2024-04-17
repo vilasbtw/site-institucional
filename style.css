@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.cabecalho-info {
+    display: flex;
+    background-color: #096c47;
+    color: white;
+    font-size: 10.5px;
+    justify-content: space-between;
+
+    /* RESPONSIVIDADE */
+    height: 40px;
+    padding-right: 15px;   
+}
+
+.cabecalho-info ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.cabecalho-info-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* RESPONSIVIDADE */
+    height: 40px;
+    width: 40px;
+}
+
+.cabecalho-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Merriweather", serif;
+
+    /* RESPONSIVIDADE */
+    height: 150px;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.cabecalho-logo-imagem {
+    display: flex;
+    justify-content: center;
+
+    /* RESPONSIVIDADE */
+    height: 110px;
+    width: 170px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    
+    /* RESPONSIVIDADE*/
+    font-size: 14px;
+    height: 40px;
+}
+
+.cabecalho-menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    /* RESPONSIVIDADE*/
+    gap: 40px;
+}
+
+.conteudo {
+    font-family: "Merriweather", serif;
+    background-image: url('img/apresentacao.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    /* RESPONSIVIDADE */
+    height: 350px;
+    padding: 140px 200px;
+}
+
+.conteudo-apresentacao {
+    /* RESPONSIVIDADE */
+    width: 70%;
+}
+
+.conteudo-apresentacao h1 {
+    /* RESPONSIVIDADE */
+    margin-bottom: 40px;
+    font-size: 70px;
+}
+
+.conteudo-apresentacao h1:hover {
+    color: #096c47;
+}
+
+.conteudo-apresentacao p {
+    /* RESPONSIVIDADE */
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.conteudo-botoes {
+    display: flex;
+    justify-content: space-between;
+
+    /* RESPONSIVIDADE */
+    width: 330px;
+}
+
+.botao-verde {
+    background-color: #096c47;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+
+    /* RESPONSIVIDADE */
+    width: 170px;
+    height: 40px;
+}
+
+.botao-verde:hover {
+    background-color: white;
+    color: #096c47;
+    cursor: pointer;
+}
+
+.botao-transparente {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+    
+    /* RESPONSIVIDADE */ 
+    width: 120px;
+    height: 40px;
+}
+
+.botao-transparente:hover {
+    background-color: white;
+    color: darkgrey;
+    cursor: pointer;
+}
