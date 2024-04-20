@@ -27,6 +27,12 @@ img {
     display: flex;
     align-items: center;
     gap: 3px;
+    transition: color 0.5s ease-in-out;
+}
+
+.cabecalho-info li:hover {
+    color: darkgrey;
+    cursor: pointer;
 }
 
 .cabecalho-info-icone {
@@ -49,7 +55,6 @@ img {
     height: 150px;
     font-size: 15px;
     font-weight: 600;
-
 }
 
 .cabecalho-logo-imagem {
@@ -82,6 +87,11 @@ img {
     gap: 40px;
 }
 
+.cabecalho-menu li:hover {
+    color: #096c47;
+    cursor: pointer;
+}
+
 .conteudo {
     font-family: "Merriweather", serif;
     background-image: url('img/apresentacao.jpg');
@@ -91,7 +101,7 @@ img {
 
     /* RESPONSIVIDADE */
     height: 350px;
-    padding: 140px 200px;
+    padding: 130px;
 }
 
 .conteudo-apresentacao {
@@ -107,6 +117,7 @@ img {
 
 .conteudo-apresentacao h1:hover {
     color: #096c47;
+    cursor: pointer;
 }
 
 .conteudo-apresentacao p {
@@ -161,4 +172,37 @@ img {
     background-color: white;
     color: darkgrey;
     cursor: pointer;
+}
+
+.historico {
+    font-family: "Merriweather", serif;
+    display: flex;
+
+    /* RESPONSIVIDADE */
+    padding: 130px;
+    height: 350px;
+}
+
+.historico-apresentacao {
+    /* RESPONSIVIDADE */
+    width: 60%;
+}
+
+.historico-apresentacao-titulo {
+    font-size: 20px;
+}
+
+.historico-apresentacao-texto {
+    font-weight: 300;
+    font-size: 13px;
+
+    /* RESPONSIVIDADE */
+    padding-top: 60px;
+}
+
+.historico-foto {
+    font-family: "Merriweather", serif;
+    /* RESPONSIVIDADE */    
+    width: 40%;
+    padding-left: 70px;
 }
