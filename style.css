@@ -5,53 +5,20 @@
     padding: 0;
 }
 
+html {
+    font-family: "Merriweather", serif;
+    scroll-behavior: smooth;
+}
+
 img {
     height: 100%;
     width: 100%;
-}
-
-.cabecalho-info {
-    display: flex;
-    background-color: #096c47;
-    color: white;
-    font-size: 10.5px;
-    justify-content: space-between;
-
-    /* RESPONSIVIDADE */
-    height: 40px;
-    padding-right: 15px;   
-}
-
-.cabecalho-info ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    transition: color 0.5s ease-in-out;
-}
-
-.cabecalho-info li:hover {
-    color: darkgrey;
-    cursor: pointer;
-}
-
-.cabecalho-info-icone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* RESPONSIVIDADE */
-    height: 40px;
-    width: 40px;
 }
 
 .cabecalho-logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Merriweather", serif;
-
-    /* RESPONSIVIDADE */
     height: 150px;
     font-size: 15px;
     font-weight: 600;
@@ -59,9 +26,7 @@ img {
 
 .cabecalho-logo-imagem {
     display: flex;
-    justify-content: center;
-
-    /* RESPONSIVIDADE */
+    align-items: center;
     height: 110px;
     width: 170px;
 }
@@ -70,47 +35,39 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Merriweather", serif;
     font-weight: 800;
-    
-    /* RESPONSIVIDADE*/
     font-size: 14px;
     height: 40px;
 }
 
-.cabecalho-menu ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-
-    /* RESPONSIVIDADE*/
-    gap: 40px;
+.cabecalho-menu a {
+    text-decoration: none;
+    color: black;
 }
 
-.cabecalho-menu li:hover {
+.cabecalho-menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 35px;
+}
+
+.cabecalho-menu a:hover {
     color: #096c47;
     cursor: pointer;
 }
 
 .conteudo {
-    font-family: "Merriweather", serif;
     background-image: url('img/apresentacao.jpg');
     background-size: cover;
     background-position: center;
     color: white;
-
-    /* RESPONSIVIDADE */
     height: 350px;
     padding: 130px;
 }
 
-.conteudo-apresentacao {
-    /* RESPONSIVIDADE */
-    width: 70%;
-}
-
 .conteudo-apresentacao h1 {
-    /* RESPONSIVIDADE */
+    width: 700px;
     margin-bottom: 40px;
     font-size: 70px;
 }
@@ -121,7 +78,7 @@ img {
 }
 
 .conteudo-apresentacao p {
-    /* RESPONSIVIDADE */
+    width: 700px;
     margin-bottom: 20px;
     font-weight: 300;
 }
@@ -129,62 +86,53 @@ img {
 .conteudo-botoes {
     display: flex;
     justify-content: space-between;
-
-    /* RESPONSIVIDADE */
     width: 330px;
+}
+
+.botao-verde,
+.botao-transparente {
+    font-family: "Merriweather", serif;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+    height: 40px;
 }
 
 .botao-verde {
     background-color: #096c47;
-    color: white;
     border: none;
-    border-radius: 5px;
-    font-weight: 600;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease-in-out;
-
-    /* RESPONSIVIDADE */
     width: 170px;
-    height: 40px;
-}
-
-.botao-verde:hover {
-    background-color: white;
-    color: #096c47;
-    cursor: pointer;
 }
 
 .botao-transparente {
     background-color: transparent;
-    color: white;
     border: 1px solid white;
-    border-radius: 5px;
-    font-weight: 600;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease-in-out;
-    
-    /* RESPONSIVIDADE */ 
     width: 120px;
-    height: 40px;
 }
 
+.botao-verde:hover,
 .botao-transparente:hover {
     background-color: white;
-    color: darkgrey;
     cursor: pointer;
 }
 
-.historico {
-    font-family: "Merriweather", serif;
-    display: flex;
+.botao-verde:hover {
+    color: #096c47;
+}
 
-    /* RESPONSIVIDADE */
+.botao-transparente:hover {
+    color: darkgrey;
+}
+
+#historico, #localizacao {
+    display: flex;
     padding: 130px;
     height: 350px;
 }
 
-.historico-apresentacao {
-    /* RESPONSIVIDADE */
+.historico-apresentacao, .localizacao-api {
     width: 60%;
 }
 
@@ -192,17 +140,36 @@ img {
     font-size: 20px;
 }
 
-.historico-apresentacao-texto {
+.historico-apresentacao-texto, .localizacao-texto {
     font-weight: 300;
     font-size: 13px;
-
-    /* RESPONSIVIDADE */
-    padding-top: 60px;
 }
 
 .historico-foto {
-    font-family: "Merriweather", serif;
-    /* RESPONSIVIDADE */    
     width: 40%;
     padding-left: 70px;
+}
+
+.mapa {
+    height: 80%;
+    width: 80%;
+}
+
+.localizacao-api h2 {
+    padding-top: 20px;
+}
+
+.rodape {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
