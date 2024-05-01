@@ -3,9 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-html {
     font-family: "Merriweather", serif;
     scroll-behavior: smooth;
 }
@@ -126,39 +123,6 @@ img {
     color: darkgrey;
 }
 
-#historico, #localizacao {
-    display: flex;
-    padding: 130px;
-    height: 350px;
-}
-
-.historico-apresentacao, .localizacao-api {
-    width: 60%;
-}
-
-.historico-apresentacao-titulo {
-    font-size: 20px;
-}
-
-.historico-apresentacao-texto, .localizacao-texto {
-    font-weight: 300;
-    font-size: 13px;
-}
-
-.historico-foto {
-    width: 40%;
-    padding-left: 70px;
-}
-
-.mapa {
-    height: 80%;
-    width: 80%;
-}
-
-.localizacao-api h2 {
-    padding-top: 20px;
-}
-
 .rodape {
     background-color: black;
     color: white;
@@ -172,4 +136,38 @@ img {
 footer a {
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 800px) {
+    
+    .conteudo {
+        padding: 75px 30px;
+    }
+
+    .conteudo-apresentacao-titulo h1 {
+        width: 100%;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .conteudo-apresentacao p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+ 
+    .conteudo-botoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+    }
+
 }
