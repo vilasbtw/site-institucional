@@ -39,7 +39,7 @@ img {
 
 .cabecalho-menu a {
     text-decoration: none;
-    color: black;
+    color: rgba(50, 70, 50);
 }
 
 .cabecalho-menu ul {
@@ -138,7 +138,48 @@ footer a {
     color: white;
 }
 
-@media (max-width: 850px) {
+.screen-right {
+    color: white;
+    background-color: rgb(10, 10, 20);
+}
+
+.screen-right, .screen-left {
+    display: flex;
+    height: 500px;
+}
+
+.screen-right-txt, .screen-left-txt {
+    width: 60%;
+    padding: 80px 80px 60px 80px;
+}
+
+.screen-right-txt-title, .screen-left-txt-title {
+    font-size: 45px;
+}
+
+.screen-right-txt-paragraph, .screen-left-txt-paragraph {
+    margin-top: 40px;
+    font-weight: 400;
+}
+
+.screen-right-img, .screen-left-img {
+    padding: 80px;
+    width: 40%;
+}
+
+.screen-right-img-photo, .screen-left-img-photo {
+    height: 300px;
+    padding-bottom: 15px;
+}
+
+.screen-right-img-description, .screen-left-img-description {
+    height: 3px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+@media (max-width: 920px) {
 
     .cabecalho-logo {
         height: 110px;
@@ -160,7 +201,6 @@ footer a {
         flex-wrap: wrap; 
         justify-content: center;
         gap: 20px;
-        font-weight: 400;
     }
 
     .conteudo {
@@ -185,7 +225,6 @@ footer a {
     }
 
     .conteudo-botoes {
-        display: flex;
         justify-content: center;
         align-items: center;
         gap: 25px;
@@ -195,4 +234,48 @@ footer a {
     .footer {
         font-size: 1px;
     }
+
+    .screen-right, .screen-left {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        padding-top: 40px;
+    }
+    
+    .screen-right-txt, .screen-left-txt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .screen-right-txt-title, .screen-left-txt-title {
+        font-size: 40px;
+    }
+    
+    .screen-right-txt-paragraph, .screen-left-txt-paragraph {
+        width: 75%;
+        font-size: 13px;
+    }
+    
+    .screen-right-img, .screen-left-img {
+        padding: 25px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .screen-right-img-photo, .screen-left-img-photo {
+        padding-bottom: 8px;
+    }
+    
+    .screen-right-img-description, .screen-left-img-description {
+        font-size: 8px;
+    }
+    
 }
